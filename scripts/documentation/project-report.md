@@ -34,3 +34,23 @@ Unauthorized users should not be able to access sensitive records, while authori
 ## Conclusion
 
 This project demonstrates how a scripted ServiceNow ACL can control record access based on field values.
+## Users and Roles Creation
+
+### Assigned Member
+Sharvi-M-311624243037
+
+### Task
+Create the required users and roles in ServiceNow for the project.
+
+### Planned Configuration
+- Create the required ServiceNow users.
+- Create the required roles.
+- Assign appropriate roles to the users.
+- Verify the user and role configuration.
+- Use the configured users and roles for ACL testing.
+
+### Status
+In Progress
+
+### Test Results
+To be updated after the ServiceNow users and roles are created and tested.
