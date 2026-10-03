@@ -1,39 +1,14 @@
-# Script-Controlled ACL – Restrict Record Access Based on Field Value
+# ServiceNow – Script-Controlled ACL
 
-## Project Overview
+**Project:** Script-Controlled ACL – Restrict Record Access Based on Field Value
 
-This project demonstrates how a ServiceNow Access Control List (ACL) can use a script to restrict access to records based on a field value.
+This repository contains the 14 phase-wise documentation files prepared for the assigned ServiceNow project.
 
-## Objective
+## Before final submission
+- Replace placeholder field names and allowed values with your actual ServiceNow configuration.
+- Add screenshots from your own ServiceNow instance where required by the official templates.
+- Complete UAT Actual Result and Pass/Fail fields after testing.
+- Enter your actual ServiceNow release/version in the Technology Stack file.
 
-The objective of this project is to restrict access to sensitive Incident records and allow access only to authorized users.
-
-## Technologies Used
-
-- ServiceNow
-- JavaScript
-- ACL
-- GitHub
-
-## How It Works
-
-1. A user tries to access an Incident record.
-2. The ACL checks the value of the sensitive field.
-3. If the record is not sensitive, access is allowed.
-4. If the record is sensitive, the user's authorization is checked.
-5. Unauthorized users are denied access.
-
-## Project Structure
-
-```text
-script-controlled-acl/
-│
-├── README.md
-│
-├── scripts/
-│   └── acl_script.js
-│
-├── screenshots/
-│
-└── documentation/
-    └── project-report.md
+## GitHub upload order
+Upload the files in numerical order from 01 to 14. Each file can be uploaded separately using **Add file → Upload files → Commit changes**.
