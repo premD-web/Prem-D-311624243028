@@ -1,0 +1,9 @@
+Test ID,Scenario,Test data / setup,Expected result,Actual result,Status,Evidence
+TC-01,Non-protected field value,Incident impact is not 1; user otherwise permitted,ACL script allows,NOT RUN,NOT RUN,Add screenshot/reference
+TC-02,Protected value with authorized role,Incident impact is 1; user has incident_restricted_access,ACL script allows,NOT RUN,NOT RUN,Add screenshot/reference
+TC-03,Protected value without authorized role,Incident impact is 1; user lacks incident_restricted_access,ACL script denies,NOT RUN,NOT RUN,Add screenshot/reference
+TC-04,Change protected value to non-protected,Change impact from 1 to another value,Script decision changes according to rule,NOT RUN,NOT RUN,Add screenshot/reference
+TC-05,ACL inactive,Deactivate ACL in development instance,Scripted rule is not enforced by this ACL,NOT RUN,NOT RUN,Add screenshot/reference
+TC-06,Multiple Incident records,Test records with different field values,Decision follows each record value,NOT RUN,NOT RUN,Add screenshot/reference
+TC-07,Write operation tested separately,Configure and test a separate Write ACL,Only configured operation is controlled,NOT RUN,NOT RUN,Add screenshot/reference
+TC-08,Regression test,Test normal authorized Incident workflow,Existing permitted functions continue,NOT RUN,NOT RUN,Add screenshot/reference
