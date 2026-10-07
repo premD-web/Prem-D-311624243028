@@ -1,1 +1,67 @@
+// ACL Create - Script Controlled ACL
 
+function createACL(user, requiredRole, field, expectedValue) {
+
+    // Check if user exists
+    if (!user) {
+        return {
+            success: false,
+            message: "User does not exist"
+        };
+    }
+
+    // Check role
+    if (!user.roles.includes(requiredRole)) {
+        return {
+            success: false,
+            message: "User does not have the required role"
+        };
+    }
+
+    // Check field
+    if (!(field in user)) {
+        return {
+            success: false,
+            message: "Field does not exist"
+        };
+    }
+
+    // Check field value
+    if (user[field] !== expectedValue) {
+        return {
+            success: false,
+            message: "Field value does not match. ACL creation denied"
+        };
+    }
+
+    // Create ACL
+    return {
+        success: true,
+        message: "ACL created successfully",
+        acl: {
+            user: user.name,
+            role: requiredRole,
+            field: field,
+            value: expectedValue
+        }
+    };
+}
+
+
+// Sample user
+const user = {
+    name: "Alice",
+    roles: ["admin"],
+    department: "IT"
+};
+
+
+// Create ACL
+const result = createACL(
+    user,
+    "admin",
+    "department",
+    "IT"
+);
+
+console.log(result);
